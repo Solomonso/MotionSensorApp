@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MotionSensorApp</string>
+    <string name="welcome">Welcome</string>
+    <string name="report">Report</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reports">Reports</string>
+    <string name="front_door">Front Door</string>
+    <string name="bedroom">Master\nBedroom</string>
+    <string name="back_door">Back Door</string>
+    <string name="graph"><u>Graph</u></string>
+</resources>
