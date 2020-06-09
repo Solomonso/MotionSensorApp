@@ -18,6 +18,7 @@ public class ViewPagerAdaptor extends FragmentPagerAdapter {
                   fragment = new AllSensorData();
                   break;
               case 1:
+
                   fragment = new MostRecent();
                   break;
           }

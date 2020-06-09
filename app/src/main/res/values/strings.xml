@@ -8,5 +8,8 @@
     <string name="front_door">Front Door</string>
     <string name="bedroom">Master\nBedroom</string>
     <string name="back_door">Back Door</string>
+    <string name="number">Number Of times</string>
+    <string name="master_bed">Master Bedroom</string>
     <string name="graph"><u>Graph</u></string>
+    <string name="past_24h">Past 24H</string>
 </resources>
