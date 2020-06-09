@@ -28,7 +28,7 @@ import androidx.fragment.app.Fragment;
 import java.util.Objects;
 
 public class MostRecent extends Fragment {
-    private static final String URL = "http://192.168.178.62/Request/frontDoor.php";
+    private static final String URL = "http://192.168.178.62/RequestApi/frontDoor.php";
     TextView frontDoorTime;
     TextView frontDoorTimesDetected;
     TextView bedTime;
