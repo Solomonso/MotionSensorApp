@@ -1,6 +1,7 @@
 package com.example.motionsensorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewpager.widget.ViewPager;
 import android.util.Log;
 import android.os.Bundle;
@@ -21,8 +22,7 @@ public class ReportActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private ViewPagerAdaptor adaptor;
     private TabLayout tabLayout;
-    private RequestQueue mQueue;
-    TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +35,7 @@ public class ReportActivity extends AppCompatActivity {
         viewPager.setAdapter(adaptor);
         tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
     }
 }
 

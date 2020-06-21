@@ -15,11 +15,11 @@ public class ViewPagerAdaptor extends FragmentPagerAdapter {
           switch (position)
           {
               case 0:
-                  fragment = new AllSensorData();
+                  fragment = new MostRecent();
                   break;
               case 1:
 
-                  fragment = new MostRecent();
+                  fragment = new AllSensorData();
                   break;
           }
           return fragment;
@@ -35,9 +35,9 @@ public class ViewPagerAdaptor extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
        switch (position){
            case 0:
-               return "All Sensor Data";
-           case 1:
                return "Most Recent";
+           case 1:
+               return "All Sensor Data";
        }
        return null;
     }

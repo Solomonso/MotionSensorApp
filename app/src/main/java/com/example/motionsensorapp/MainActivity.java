@@ -3,6 +3,7 @@ package com.example.motionsensorapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
@@ -25,19 +26,15 @@ import javax.ws.rs.core.MediaType;
 
 public class MainActivity extends AppCompatActivity {
     private Button button, btn2;
-    private TextView textView;
     private final String CHANNEL_ID = "motion detected";
     private final int NOTIFICATION_ID = 001;
-    private String TAG = "DynamoDb_Demo";
+    private String TAG = "hello";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button = findViewById(R.id.button);
 
-        Client client = ClientBuilder.newClient();
-        WebTarget target = client.target("https://test-motion-sensor.data.thethingsnetwork.org/api/v2/query?last=2d");
-        //System.out.println(target.request(MediaType.APPLICATION_JSON_TYPE).get(String.class));
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,20 +43,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn2 = findViewById(R.id.button3);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              openMainActivity2();
-            }
-        });
-    }
-    public void openMainActivity2()
-    {
-        Intent intent = new Intent(MainActivity.this,MainActivity2.class);
-        startActivity(intent);
-    }
 
+    }
     public void openReportPage()
     {
         Intent intent = new Intent(MainActivity.this,ReportActivity.class);
